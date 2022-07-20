@@ -1,0 +1,504 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.rtl.min.css" integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR" crossorigin="anonymous">
+
+    <!-- <title>مرحبًا بالعالم!</title> -->
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+        .op{
+            background-color: rosybrown;
+        }
+        
+        .navbar-brand{
+            color: cornsilk;
+            
+        }
+        .navbar-toggler{
+            color: cornsilk;
+        }
+        .navbar-toggler-icon{
+            color: beige;
+        }
+        .container-fluid{
+            color: rgb(76, 91, 149);
+        }
+        
+        .carousel-inner{
+            width: auto;
+              height: 700px;  
+        }
+        .carousel-indicators{
+            color: rgb(149, 76, 204);
+        }
+        .carousel-caption{
+font-family: Arial, Helvetica, sans-serif;
+color:white;
+border: 1px solid royalblue;
+/* height: 400px; */
+background-color: black;
+       font-size: large;}
+
+       .col{
+        /* background-color: aqua; */
+        width: 300px;
+        font-style: oblique;
+        
+       }
+ .card-title{
+    color: rgb(64, 7, 21);
+ }
+ .card-text1{
+  font-size: medium;
+ }
+ .lll{
+  margin-left: 55px;
+  border-color: black;
+ }
+ .row{
+  margin-left: 08px;
+ }
+
+    </style>
+  </head>
+  <body class="op">
+    <!-- <h1>مرحبًا بالعالم!</h1> -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    -->
+    <nav class="navbar bg-secondary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><i><b>Anime</b></i> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Anime</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <br>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img height="700px" src="https://cutewallpaper.org/23/one-piece-luffy-hd-wallpaper/113485045.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">  
+              <h5><u> One Piece</u></h5>
+              <p><b>Follows the adventures of Monkey D. Luffy and his pirate crew in order to find the greatest treasure ever left by the legendary Pirate, Gold Roger.</b></p>
+             <a href="https://zoro.to/one-piece-100?ref=search">
+              <button type ="button" class="btn btn-primary">click here to watch
+
+              </button>
+            </a>
+            </div>
+            
+          </div>
+          <div class="carousel-item">
+            <img height="700px" src="https://wallpaperaccess.com/full/552400.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                
+              <h5><b> <u> Bleach</u></b></h5>
+              <p><b >High school student Ichigo Kurosaki, who has the ability to see ghosts, gains soul reaper powers from Rukia Kuchiki and sets out to save the world from "Hollows".</b></p>
+              <a href="https://zoro.to/bleach-806?ref=search">
+                <button type ="button" class="btn btn-primary">click here to watch</button>
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img height="700px" src="https://wallpapercave.com/wp/wp8840620.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5><b><u> Naruto</u></b></h5>
+              <p><b>Naruto Uzumaki, is a loud, hyperactive, adolescent ninja who constantly searches for approval and recognition, as well as to become Hokage, who is acknowledged as the leader and strongest of all ninja in the village.</b></p>
+              <a href="https://zoro.to/naruto-shippuden-355?ref=search">
+                <button type ="button" class="btn btn-primary">click here to watch</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br>
+      <br>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+           
+          <div class="card">
+            <img height="200px"  src="https://img1.ak.crunchyroll.com/i/spire2/54c15675670ba44c1f98c3e11ba0cddf1515030877_main.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Gintama</h5> <a href="https://zoro.to/gintama-13?ref=search"><button  class="btn btn-success">Watch now</button></a><a href="https://www.imdb.com/title/tt0988818/?ref_=fn_al_tt_1"><img class="lll" height="50px"   src="https://www.bing.com/th?id=A558f1c496933af90a83e40527cd1a9fc&w=188&h=132&c=7&o=6&dpr=1.25&pid=SANGAM"></a>
+              <p class="card-text">In an era where aliens have invaded and taken over feudal Tokyo, an unemployed samurai finds work however he can.</p>
+
+            </div>
+          </div>
+     
+        </div>
+        <div class="col">
+            
+          <div class="card">
+            <img height="208px" src="https://img.zorores.com/_r/300x400/100/05/4f/054ff70eabaeadc4ad9978054e274080/054ff70eabaeadc4ad9978054e274080.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+             
+              <h5 class="card-title">Boruto</h5> <a href="https://zoro.to/boruto-naruto-next-generations-8143?ref=search"><button class="btn btn-success">Watch now</button></a><a href="https://www.imdb.com/title/tt6342474/"><img class="lll" height="50px"   src="https://www.bing.com/th?id=A558f1c496933af90a83e40527cd1a9fc&w=188&h=132&c=7&o=6&dpr=1.25&pid=SANGAM"></a>
+              <p  class="card-text1">Boruto,follows his father's footsteps along with his friends to become great ninja. 
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img height="200px" src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+           <div class="card-body">
+              <h5 class="card-title">Spy X Family</h5> <a href="https://zoro.to/spy-x-family-17977?ref=search"><button class="btn btn-success">Watch now</button></a><a href="https://www.imdb.com/title/tt13706018/"><img class="lll" height="50px"   src="https://www.bing.com/th?id=A558f1c496933af90a83e40527cd1a9fc&w=188&h=132&c=7&o=6&dpr=1.25&pid=SANGAM"></a>
+              <p class="card-text">A spy on an undercover mission gets married and adopts a child as part of his cover. His wife and daughter have ..</p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div> -->
+        <br>
+   
+      
+      <!-- <div class="row row-cols-1 row-cols-md-3 g-4"> -->
+        <div class="col">
+          <div class="card">
+            <img height="200px" src="https://images-na.ssl-images-amazon.com/images/I/91tcbQdoK4L._RI_.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">One Punch Man</h5> <a href="https://zoro.to/watch/one-punch-man-63?ep=1501"><button class="btn btn-success">Watch now</button></a><a href="https://www.imdb.com/title/tt4508902/"><img class="lll" height="50px"   src="https://www.bing.com/th?id=A558f1c496933af90a83e40527cd1a9fc&w=188&h=132&c=7&o=6&dpr=1.25&pid=SANGAM"></a>
+              <p class="card-text">The story of Saitama, a hero that does it just for fun & can defeat his enemies with a single punch.The most powerful..</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img height="200px" src="https://m.media-amazon.com/images/M/MV5BN2QwYzAxNjgtOWY4YS00MDE5LTliNTgtYjg3YmE1NDJhMzRiXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mob Psycho 100</h5><a href="https://zoro.to/mob-psycho-100-101?ref=search"><button class="btn btn-success">Watch now</button></a><a href="https://www.imdb.com/title/tt5897304/?ref_=tt_mv_close"><img class="lll" height="50px"   src="https://www.bing.com/th?id=A558f1c496933af90a83e40527cd1a9fc&w=188&h=132&c=7&o=6&dpr=1.25&pid=SANGAM"></a>
+              <p class="card-text">A psychic middle school boy tries to live a normal life and keep his growing powers under control, even though he constantly gets..
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="col">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+
+      <div class="mba-block" style="display: block; text-align: center; margin: 1rem 0;"><a href="https://mangareader.to" target="_blank" rel="nofollow"><img style="width: 728px; height: auto; max-width: 100%;" src="https://file.imgprox.net/728x90" alt="Mangareader"></a></div>
+    
+      <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="bootstrap" viewBox="0 0 118 94">
+          <title>Bootstrap</title>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
+        </symbol>
+        <symbol id="facebook" viewBox="0 0 16 16">
+          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+        </symbol>
+        <symbol id="instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+        </symbol>
+        <symbol id="twitter" viewBox="0 0 16 16">
+          <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+        </symbol>
+      </svg>
+      
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-muted">&copy; 2022 Company, Inc</p>
+      
+          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+          </a>
+      
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+          </ul>
+        </footer>
+      </div>
+      
+      <div class="b-example-divider"></div>
+      
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Company, Inc</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+          </ul>
+        </footer>
+      </div>
+      
+      <div class="b-example-divider"></div>
+      
+      <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+          </ul>
+          <p class="text-center text-muted">&copy; 2022 Company, Inc</p>
+        </footer>
+      </div>
+      
+      <div class="b-example-divider"></div>
+      
+      <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+          <div class="col mb-3">
+            <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+            </a>
+            <p class="text-muted">&copy; 2022</p>
+          </div>
+      
+          <div class="col mb-3">
+      
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+      
+          <!-- <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"> Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"> Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"> Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"> FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"> About</a></li>
+            </ul>
+          </div> -->
+      
+          <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+      
+      <div class="b-example-divider"></div>
+      
+      
+      <div class="container">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                  <button class="btn btn-primary" type="button">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>&copy; 2022 Company, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+      
+      
+          <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+      
+
+
+
+  </body>
+</html>
